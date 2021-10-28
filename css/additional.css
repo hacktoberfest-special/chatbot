@@ -1,0 +1,12 @@
+.chat-body{
+    overflow-y: scroll;
+}
+
+.chat-body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #1b55e2;
+}
