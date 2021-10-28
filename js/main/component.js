@@ -1,3 +1,8 @@
+// uncomment window.location in switch and audio.play
+
+let src = './audio/recieved.mp3';
+let messageAudio = new Audio(src);
+messageAudio.volume = 0.1;
 
 // function which adds the text to the chat window
 function createText(party, content) {
@@ -189,6 +194,7 @@ function addTypingEffect(delay, callback=()=>{}) {
     $('.chat-body').append(createTypingEffect());
     setTimeout(function () {
         $('.chat-body > div').last().remove();
+        messageAudio.play();
         callback()
     }, delay);
 }
